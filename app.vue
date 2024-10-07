@@ -1,9 +1,7 @@
 <template>
-  <div>
+  <div class="flex items-center justify-center h-screen">
     <h1 class="text-2xl text-center">
-      Tailwind test
+      Coming soon ⚡️🤖
     </h1>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
   </div>
 </template>
