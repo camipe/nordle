@@ -10,4 +10,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  modules: ['@nuxtjs/storybook'],
+  vite: {
+    optimizeDeps: {
+      include: ['jsdoc-type-pratt-parser'],
+    },
+  },
 })

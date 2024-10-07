@@ -9,9 +9,12 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "storybook": "storybook dev --port 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@nuxtjs/storybook": "^8.3.1",
     "@nuxtjs/supabase": "^1.4.0",
     "nuxt": "^3.13.2",
     "vue": "latest",
@@ -19,9 +22,20 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.7.3",
+    "@nuxtjs/storybook": "8.3.1",
+    "@storybook-vue/nuxt": "8.3.1",
+    "@storybook/addon-essentials": "8.3.5",
+    "@storybook/addon-interactions": "8.3.5",
+    "@storybook/addon-links": "8.3.5",
+    "@storybook/blocks": "8.3.5",
+    "@storybook/builder-vite": "8.3.5",
+    "@storybook/test": "8.3.5",
+    "@storybook/vue3": "8.3.5",
+    "@types/node": "^22.7.4",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.11.1",
+    "eslint": "^9.12.0",
     "postcss": "^8.4.47",
+    "storybook": "8.3.5",
     "tailwindcss": "^3.4.13"
   }
 }
