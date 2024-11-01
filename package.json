@@ -11,31 +11,36 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "storybook": "storybook dev --port 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
-    "@nuxtjs/storybook": "^8.3.1",
-    "@nuxtjs/supabase": "^1.4.0",
+    "@nuxtjs/storybook": "^8.3.2",
+    "@nuxtjs/supabase": "^1.4.1",
+    "drizzle-orm": "^0.36.0",
     "nuxt": "^3.13.2",
+    "postgres": "^3.4.5",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.7.3",
-    "@nuxtjs/storybook": "8.3.1",
-    "@storybook-vue/nuxt": "8.3.1",
-    "@storybook/addon-essentials": "8.3.5",
-    "@storybook/addon-interactions": "8.3.5",
-    "@storybook/addon-links": "8.3.5",
-    "@storybook/blocks": "8.3.5",
-    "@storybook/builder-vite": "8.3.5",
-    "@storybook/test": "8.3.5",
-    "@storybook/vue3": "8.3.5",
-    "@types/node": "^22.7.4",
+    "@antfu/eslint-config": "^3.8.0",
+    "@nuxtjs/storybook": "8.3.2",
+    "@storybook-vue/nuxt": "8.3.2",
+    "@storybook/addon-essentials": "8.4.0",
+    "@storybook/addon-interactions": "8.4.0",
+    "@storybook/addon-links": "8.4.0",
+    "@storybook/blocks": "8.4.0",
+    "@storybook/builder-vite": "8.4.0",
+    "@storybook/test": "8.4.0",
+    "@storybook/vue3": "8.4.0",
+    "@types/node": "^22.8.6",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.12.0",
+    "drizzle-kit": "^0.27.0",
+    "eslint": "^9.13.0",
     "postcss": "^8.4.47",
-    "storybook": "8.3.5",
-    "tailwindcss": "^3.4.13"
+    "storybook": "8.4.0",
+    "supabase": "^1.207.9",
+    "tailwindcss": "^3.4.14"
   }
 }
