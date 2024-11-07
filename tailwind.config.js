@@ -12,8 +12,14 @@ export default {
     extend: {
       colors: {
         green: '#55D440',
+        gray: '#404050',
+        red: '#E31F04',
         knowit: {
-          white: '#FEFBE6',
+          white: {
+            100: '#FEFBE6',
+            44: 'rgba(254, 251, 230, 0.44)',
+            22: 'rgba(254, 251, 230, 0.22)',
+          },
           black: '#0B0B26',
         },
         blue: {
@@ -26,8 +32,8 @@ export default {
           60: '#CFCEFF',
         },
         pink: {
-          100: '#FFA9A9',
-          60: '#FFD6D6',
+          100: '#FCB27C',
+          60: '#FFD6B8',
         },
       },
     },
