@@ -1,5 +1,5 @@
 <template>
-  <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="45" height="46" viewBox="0 0 45 46" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
     <rect y="0.5" width="45" height="45" rx="10" fill="white" />
     <path
       d="M34.1916 23.5284C34.1916 22.6598 34.1137 21.8245 33.9689 21.0227H22.4316V25.7668H29.0244C28.7348 27.2925 27.8662 28.5843 26.5632 29.4529V32.5377H30.5389C32.8553 30.3995 34.1916 27.2591 34.1916 23.5284Z"
