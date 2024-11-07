@@ -26,11 +26,11 @@ export default {
           60: '#CFCEFF',
         },
         pink: {
-          100: '#FFA9A9',
-          60: '#FFD6D6',
+          100: '#FCB27C',
+          60: '#FFD6B8',
         },
       },
-    },
+    },  
   },
   plugins: [],
-}
+}      
