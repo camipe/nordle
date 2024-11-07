@@ -3,7 +3,7 @@
     <div class="mb-12">
       <IconsNordleLogoType />
       <h1 class="text-4xl text-center uppercase">Nördle</h1>
-      <p class="dark:text-purple-100 text-blue-80">Your daily nörd game by Knowit</p>
+      <p class="mt-2 dark:text-purple-100 text-blue-80">Your daily nörd game by Knowit</p>
     </div>
 
     <div class="flex flex-col items-start mt-12 space-y-4">
