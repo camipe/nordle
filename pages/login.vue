@@ -1,8 +1,7 @@
 <template>
   <div
     class="flex flex-col items-center justify-center h-screen font-medium bg-knowit-white dark:bg-knowit-black dark:text-knowit-white"
-    aria-labelledby="nordle-title" role="main"
-  >
+    aria-labelledby="nordle-title" role="main">
     <div class="mb-12">
       <IconsNordleLogoType aria-hidden="true" />
       <h1 id="nordle-title" class="text-4xl text-center uppercase">
@@ -39,6 +38,6 @@
 
 <style scoped>
 .login-button {
-  @apply flex items-center px-4 py-2.5 border-2 w-72 dark:border-knowit-white rounded-3xl dark:border-opacity-20 border-knowit-black border-opacity-20;
+  @apply flex items-center px-4 py-2.5 border-2 w-72 dark:border-knowit-white-100 rounded-3xl dark:border-opacity-20 border-knowit-black border-opacity-20;
 }
 </style>
