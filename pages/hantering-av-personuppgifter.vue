@@ -2,7 +2,7 @@
   <article class="flex flex-col h-screen px-6 pt-6 bg-knowit-white dark:bg-knowit-black dark:text-knowit-white">
     <section class="max-w-[1000px] w-full mx-auto">
       <header class="mb-6">
-        <h1 class="text-4xl font-semibold">Hantering av personuppgifter</h1>
+        <h1 class="text-2xl font-semibold md:text-4xl">Hantering av personuppgifter</h1>
       </header>
 
       <div class="space-y-6">
