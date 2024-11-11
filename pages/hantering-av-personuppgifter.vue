@@ -1,5 +1,5 @@
 <template>
-  <article class="flex flex-col h-screen px-6 bg-knowit-white dark:bg-knowit-black dark:text-knowit-white">
+  <article class="flex flex-col h-screen px-6 pt-6 bg-knowit-white dark:bg-knowit-black dark:text-knowit-white">
     <section class="max-w-[1000px] w-full mx-auto">
       <header class="mb-6">
         <h1 class="text-4xl font-semibold">Hantering av personuppgifter</h1>
