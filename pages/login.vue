@@ -13,19 +13,19 @@
     </div>
 
     <div class="flex flex-col items-start mt-12 space-y-4">
-      <button class="login-button" aria-label="Logga in med Google" @click="login">
+      <button class="login-button" aria-label="Logga in med Google">
         <span class="mr-5" aria-hidden="true">
           <IconsGoogleLogoType />
         </span>
         Logga in med Google
       </button>
-      <button class="login-button" aria-label="Logga in med Apple" @click="login">
+      <button class="login-button" aria-label="Logga in med Apple">
         <span class="mr-5" aria-hidden="true">
           <IconsAppleLogoType />
         </span>
         Logga in med Apple
       </button>
-      <button class="login-button" aria-label="Logga in med GitHub" @click="login">
+      <button class="login-button" aria-label="Logga in med GitHub">
         <span class="mr-5" aria-hidden="true">
           <IconsGithubLogoType />
         </span>
@@ -38,6 +38,6 @@
 
 <style scoped>
 .login-button {
-  @apply flex items-center px-4 py-2.5 border-2 w-72 dark:border-knowit-white-100 rounded-3xl dark:border-opacity-20 border-knowit-black border-opacity-20;
+  @apply flex items-center px-4 py-2.5 border-2 w-72 dark:border-knowit-white rounded-3xl dark:border-opacity-20 border-knowit-black border-opacity-20;
 }
 </style>
