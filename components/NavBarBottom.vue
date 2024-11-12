@@ -1,7 +1,7 @@
 <template>
-  <div class="fixed bottom-0 left-0 right-0 dark:text-knowit-white">
+  <div class="fixed bottom-0 left-0 right-0 dark:text-knowit-white max-w-[800px] mx-auto">
     <nav aria-label="Huvudnavigering">
-      <ul class="flex justify-around py-3 space-x-6 sm:space-x-4">
+      <ul class="flex justify-around py-2">
         <!-- Start Link ( change to  NuxtLink later ) -->
         <li>
           <a href="#start" aria-label="Gå till Start">
