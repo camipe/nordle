@@ -1,8 +1,5 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "heybourn.headwind",
-    "bradlc.vscode-tailwindcss",
-    "vue.volar"
+    "denoland.vscode-deno"
   ]
 }
