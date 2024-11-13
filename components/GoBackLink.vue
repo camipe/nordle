@@ -1,8 +1,5 @@
 <template>
-  <button 
-    @click="goBack" 
-    class="go-back-button" 
-    aria-label="Gå till föregående sida">
+  <button @click="goBack" class="go-back-button" aria-label="Gå till föregående sida">
     <span>
       <IconsBack />
     </span>
@@ -11,10 +8,16 @@
 
 <script>
 export default {
-  methods: {
-    goBack() {
-      window.history.back();
-    },
+  setup() {
+    const router = useRouter();
+
+    const goBack = () => {
+      router.go(-1);
+    };
+
+    return {
+      goBack,
+    };
   },
 };
 </script>
@@ -24,5 +27,4 @@ export default {
   cursor: pointer;
   margin-right: 1.5rem;
 }
-
 </style>
