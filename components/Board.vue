@@ -1,5 +1,5 @@
 <script setup>
-const guesses = [{ letter: 'S', class: 'correct' }, { letter: 'C', class: 'correct' }, { letter: 'R', class: 'wrongplace' }, { letter: 'U', class: 'notused' }, { letter: 'M', class: 'notused' }, { letter: 'S', class: 'filledin' }, { letter: 'C', class: 'filledin' }, { letter: 'A', class: 'filledin' }, { letter: 'R', class: 'filledin' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }]
+defineProps(['guesses'])
 </script>
 
 <template>
