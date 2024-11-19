@@ -1,4 +1,4 @@
-<template >
+<template>
   <article class="flex flex-col h-screen px-6 pt-12 bg-knowit-white dark:bg-knowit-black dark:text-knowit-white">
     <section class="max-w-[800px] mx-auto">
       <header class="flex mb-6">

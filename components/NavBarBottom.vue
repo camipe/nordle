@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
   <div class="fixed bottom-0 left-0 right-0 dark:text-knowit-white max-w-[800px] mx-auto">
     <nav aria-label="Huvudnavigering">
@@ -10,7 +13,7 @@
           </a>
         </li>
 
-        <!-- Topplistan Link ( change to  NuxtLink later )-->
+        <!-- Topplistan Link ( change to  NuxtLink later ) -->
         <li>
           <a href="#topplistan" aria-label="Gå till Topplistan">
             <IconsTrophy />
@@ -38,12 +41,8 @@
   </div>
 </template>
 
-<script setup>
-</script>
-
 <style scoped>
 a {
   @apply flex flex-col items-center text-center hover:text-blue-80 dark:hover:text-purple-100;
 }
-
 </style>

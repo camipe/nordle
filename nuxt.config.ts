@@ -3,12 +3,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
-  modules: ['@nuxtjs/storybook'],
+  modules: ['@nuxtjs/storybook', '@nuxtjs/supabase'],
   runtimeConfig: {
     dbConnectionString: '',
     public: {
       supabaseUrl: '',
       supabaseKey: '',
+      baseUrl: '',
     },
   },
   postcss: {
@@ -25,6 +26,13 @@ export default defineNuxtConfig({
   nitro: {
     experimental: {
       tasks: true,
+    },
+  },
+  supabase: {
+    redirectOptions: {
+      login: '/logga-in',
+      callback: '/confirm',
+      exclude: ['/logga-in', '/confirm', '/__nuxt_devtools__/client/'],
     },
   },
 })

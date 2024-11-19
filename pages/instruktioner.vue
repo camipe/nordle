@@ -17,10 +17,10 @@
           Till din hjälp får du ledtrådar i form av färger:
         </p>
         <div>
-          <img class="hidden dark:block" src="/assets/images/Instruktion-Dark.png" alt="Exempel på färger och vad de betyder" />
+          <img class="hidden dark:block" src="/assets/images/Instruktion-Dark.png" alt="Exempel på färger och vad de betyder">
         </div>
         <div>
-          <img class="block dark:hidden" src="/assets/images/Instruktion-Light.png" alt="Exempel på färger och vad de betyder" />
+          <img class="block dark:hidden" src="/assets/images/Instruktion-Light.png" alt="Exempel på färger och vad de betyder">
         </div>
 
         <p>

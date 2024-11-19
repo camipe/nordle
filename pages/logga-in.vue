@@ -1,7 +1,20 @@
+<script setup>
+const user = useSupabaseUser()
+const { auth } = useSupabaseClient()
+const redirectTo = `${useRuntimeConfig().public.baseUrl}/confirm`
+
+watchEffect(() => {
+  if (user.value) {
+    navigateTo('/game')
+  }
+})
+</script>
+
 <template>
   <div
     class="flex flex-col items-center justify-center h-screen font-medium bg-knowit-white dark:bg-knowit-black dark:text-knowit-white"
-    aria-labelledby="nordle-title" role="main">
+    aria-labelledby="nordle-title" role="main"
+  >
     <div class="mb-12">
       <IconsNordleLogoType aria-hidden="true" />
       <h1 id="nordle-title" class="text-4xl text-center uppercase">
@@ -25,7 +38,7 @@
         </span>
         Logga in med Apple
       </button>
-      <button class="login-button" aria-label="Logga in med GitHub">
+      <button class="login-button" aria-label="Logga in med GitHub" @click="auth.signInWithOAuth({ provider: 'github', options: { redirectTo } })">
         <span class="mr-5" aria-hidden="true">
           <IconsGithubLogoType />
         </span>
