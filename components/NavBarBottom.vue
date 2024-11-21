@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="fixed bottom-0 left-0 right-0 dark:text-knowit-white max-w-[800px] mx-auto">
+  <div class="fixed bottom-0 md:bottom-2 min-[1600px]:bottom-6 left-0 right-0 dark:text-knowit-white max-w-[800px] mx-auto">
     <nav aria-label="Huvudnavigering">
       <ul class="flex justify-around py-2">
         <!-- Start Link ( change to  NuxtLink later ) -->

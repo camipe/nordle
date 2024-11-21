@@ -89,13 +89,13 @@ onMounted(() => {
 
 <template>
   <div class="flex flex-col h-screen">
-    <Board style="min-height: 60%;" :guesses="guesses" />
-    <div class="flex flex-row px-4" :class="dnoneClass">
-      <IconsStar />
+    <Board :guesses="guesses" />
+    <div class="flex flex-row w-full max-w-[500px] min-[1600px]:max-w-[800px] mx-auto px-4" :class="dnoneClass">
+      <IconsStar class="self-center mr-2 text-green" />
       <p>Nästa spel om: 13:34 tim</p>
     </div>
     <Keyboard :letters="letters" :finished="finished" :class="finishedClass" @submit="submit" @undo="undo" @key-click="keyClick" />
-    <div class="flex flex-col w-screen px-4 py-8">
+    <div class="flex flex-col w-screen max-w-3xl px-4 py-8 mx-auto md:py-12 min-[1600px]:py-16">
       <NavBarBottom />
     </div>
   </div>
