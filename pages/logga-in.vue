@@ -12,7 +12,7 @@ watchEffect(() => {
 
 <template>
   <div
-    class="flex flex-col items-center justify-center h-screen font-medium bg-knowit-white dark:bg-knowit-black dark:text-knowit-white"
+    class="flex flex-col items-center justify-center h-screen"
     aria-labelledby="nordle-title" role="main"
   >
     <div class="mb-12">
@@ -25,7 +25,7 @@ watchEffect(() => {
       </p>
     </div>
 
-    <div class="flex flex-col items-start mt-12 space-y-4">
+    <div class="flex flex-col items-start mt-12 space-y-4 text-lg">
       <button class="login-button" aria-label="Logga in med Google">
         <span class="mr-5" aria-hidden="true">
           <IconsGoogleLogoType />
