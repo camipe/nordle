@@ -18,4 +18,13 @@
     .filledin {
         @apply border-knowit-black border-opacity-40 dark:border-knowit-white dark:border-opacity-40;
     }
+    .statbox {
+        @apply bg-knowit-white dark:bg-blue-100 rounded-3xl px-5 py-4;
+    }
+    .greenstar {
+        @apply self-center mr-2 text-green;
+    }
+    .popuptext{
+        @apply absolute mx-auto left-0 right-0 bottom-0 w-full max-w-md;
+    }
 }
