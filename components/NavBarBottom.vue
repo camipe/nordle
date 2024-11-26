@@ -2,38 +2,38 @@
 </script>
 
 <template>
-  <div class="fixed bottom-0 left-0 right-0 dark:text-knowit-white max-w-[800px] mx-auto">
+  <div class="fixed bottom-5 min-[1600px]:bottom-6 left-0 right-0 dark:text-knowit-white max-w-[800px] mx-auto">
     <nav aria-label="Huvudnavigering">
-      <ul class="flex justify-around py-2">
+      <ul class="flex justify-around p-2 text-xs min-[1600px]:text-lg">
         <!-- Start Link ( change to  NuxtLink later ) -->
         <li>
-          <a href="#start" aria-label="Gå till Start">
+          <a href="#start" class="gap-1" aria-label="Gå till Start">
             <IconsHome />
-            <span class="text-sm">Start</span>
+            <span>Start</span>
           </a>
         </li>
 
         <!-- Topplistan Link ( change to  NuxtLink later ) -->
         <li>
-          <a href="#topplistan" aria-label="Gå till Topplistan">
+          <a href="#topplistan" class="gap-1" aria-label="Gå till Topplistan">
             <IconsTrophy />
-            <span class="text-sm">Topplistan</span>
+            <span>Topplistan</span>
           </a>
         </li>
 
         <!-- Instruktioner Link ( change to  NuxtLink later ) -->
         <li>
-          <a href="#instruktioner" aria-label="Gå till Instruktioner">
+          <a href="#instruktioner" class="gap-1" aria-label="Gå till Instruktioner">
             <IconsQuestion />
-            <span class="text-sm">Instruktioner</span>
+            <span class="font-thin">Instruktioner</span>
           </a>
         </li>
 
         <!-- Min Profil Link -->
         <li>
-          <NuxtLink to="hantering-av-personuppgifter" aria-label="Gå till Min Profil">
+          <NuxtLink to="hantering-av-personuppgifter" class="gap-1" aria-label="Gå till Min Profil">
             <IconsUser />
-            <span class="text-sm">Min profil</span>
+            <span>Min profil</span>
           </NuxtLink>
         </li>
       </ul>

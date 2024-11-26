@@ -18,8 +18,8 @@ const ariaMessage = computed(() => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center border-2 rounded-xl border-knowit-black !border-opacity-20 dark:border-knowit-white">
-    <span v-if="letter === ''" class="text-4xl font-medium uppercase">&nbsp;</span>
-    <span v-else class="text-4xl font-medium uppercase" :aria-label="`Innehåller bokstaven ${letter} ${ariaMessage}`">{{ letter }}</span>
+  <div class="flex flex-col items-center justify-center text-4xl min-[1600px]:text-5xl font-medium uppercase border-2 rounded-xl key">
+    <span v-if="letter === ''">&nbsp;</span>
+    <span v-else :aria-label="`Innehåller bokstaven ${letter} ${ariaMessage}`">{{ letter }}</span>
   </div>
 </template>

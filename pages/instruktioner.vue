@@ -1,9 +1,9 @@
 <template>
-  <article class="flex flex-col h-screen px-6 pt-12 bg-knowit-white dark:bg-knowit-black dark:text-knowit-white">
+  <article class="flex flex-col h-screen px-6 pt-12">
     <section class="max-w-[800px] mx-auto">
       <header class="flex mb-6">
         <GoBackLink />
-        <h1 class="justify-center text-2xl font-semibold md:text-4xl">
+        <h1 class="justify-center text-xl font-medium md:text-4xl">
           Så spelar du Nördle
         </h1>
       </header>
@@ -34,6 +34,6 @@
         <p>Lycka till!</p>
       </div>
     </section>
+    <NavBarBottom />
   </article>
-  <NavBarBottom />
 </template>

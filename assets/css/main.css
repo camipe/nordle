@@ -3,16 +3,19 @@
 @tailwind utilities;
 
 @layer components {
+    .key{
+        @apply border-knowit-black border-opacity-20 dark:border-knowit-white dark:border-opacity-20;
+    }
     .correct {
-        @apply bg-blue-80 !border-blue-80 text-knowit-white;
+        @apply bg-blue-80 border-blue-80 text-knowit-white;
     }
     .wrongplace {
-        @apply bg-pink-100 !border-pink-100 text-knowit-black;
+        @apply bg-pink-100 border-pink-100 text-knowit-black;
     }
     .notused {
-        @apply bg-gray !border-gray text-knowit-white;
+        @apply bg-gray border-gray text-knowit-white;
     }
     .filledin {
-        @apply !border-knowit-black !border-opacity-40 dark:!border-knowit-white dark:!border-opacity-40;
+        @apply border-knowit-black border-opacity-40 dark:border-knowit-white dark:border-opacity-40;
     }
 }
