@@ -5,6 +5,7 @@ const letters = ref([{ letter: 'Q', class: '' }, { letter: 'W', class: '' }, { l
 const guesses = ref([{ letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }])
 const wordArray = ref(['A', 'S', 'C', 'I', 'I'])
 const finished = ref(false)
+const popup = ref(false)
 const finishedClass = ref('')
 const dnoneClass = ref('hidden')
 let guessIndex = -1
@@ -57,6 +58,7 @@ function submit() {
     }
     if (correctCounter === 5 || guessIndex === 29) {
       finished.value = true
+      popup.value = true
       finishedClass.value = 'invisible'
       dnoneClass.value = ''
     }
@@ -82,6 +84,10 @@ function onPress(e) {
   }
 }
 
+function close() {
+  popup.value = false
+}
+
 onMounted(() => {
   document.addEventListener('keyup', onPress)
 })
@@ -100,6 +106,8 @@ onMounted(() => {
         <NavBarBottom />
       </div>
     </div>
-    <Popup />
+    <transition name="popup">
+      <Popup v-if="popup" @close="close" />
+    </transition>
   </div>
 </template>
