@@ -1,6 +1,7 @@
 <template>
   <div>
     <svg viewBox="0 0 605 300" preserveAspectRatio="xMidYMid meet" class="mx-auto text-[4.5rem] mt-[15vh]">
+      You're a true nörd
       <path id="curve2" fill="transparent" d="M 50 150 C 100 100 200 100 200 100 C 300 100 300 150 450 150 C 450 150 550 150 600 100" />
       <text width="600" fill="currentColor">
         <textPath xlink:href="#curve2">

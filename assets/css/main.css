@@ -32,6 +32,9 @@
     .statbox {
         @apply bg-knowit-white dark:bg-blue-100 rounded-3xl px-5 py-4;
     }
+    .statbox-text{
+        @apply block text-5xl font-light;
+    }
     .greenstar {
         @apply self-center mr-2 text-green;
     }
