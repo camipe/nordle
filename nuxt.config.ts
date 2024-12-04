@@ -32,7 +32,14 @@ export default defineNuxtConfig({
     redirectOptions: {
       login: '/logga-in',
       callback: '/confirm',
-      exclude: ['/logga-in', '/confirm', '/__nuxt_devtools__/client/'],
+      exclude: ['/logga-in', '/instruktioner', '/', '/confirm', '/__nuxt_devtools__/client/'],
     },
+  },
+  fonts: {
+    families: [{
+      name: 'Bagoss',
+      weights: ['300', '400', '500', '600'],
+      subsets: ['latin'],
+    }],
   },
 })
