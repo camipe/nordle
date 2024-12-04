@@ -5,6 +5,7 @@ const letters = ref([{ letter: 'Q', class: '' }, { letter: 'W', class: '' }, { l
 const guesses = ref([{ letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }, { letter: '', class: '' }])
 const wordArray = ref(['A', 'S', 'C', 'I', 'I'])
 const finished = ref(false)
+const popup = ref(false)
 const finishedClass = ref('')
 const dnoneClass = ref('hidden')
 let guessIndex = -1
@@ -57,6 +58,7 @@ function submit() {
     }
     if (correctCounter === 5 || guessIndex === 29) {
       finished.value = true
+      popup.value = true
       finishedClass.value = 'invisible'
       dnoneClass.value = ''
     }
@@ -82,21 +84,30 @@ function onPress(e) {
   }
 }
 
+function close() {
+  popup.value = false
+}
+
 onMounted(() => {
   document.addEventListener('keyup', onPress)
 })
 </script>
 
 <template>
-  <div class="flex flex-col h-screen">
-    <Board :guesses="guesses" />
-    <div class="flex flex-row w-full max-w-[500px] min-[1600px]:max-w-[800px] mx-auto px-4" :class="dnoneClass">
-      <IconsStar class="self-center mr-2 text-green" />
-      <p>Nästa spel om: 13:34 tim</p>
+  <div>
+    <div class="flex flex-col h-screen">
+      <Board :guesses="guesses" />
+      <div class="flex flex-row w-full max-w-[500px] md:max-w-[800px] xl:max-w-[500px] min-[1600px]:max-w-[800px] mx-auto px-4" :class="dnoneClass">
+        <IconsStar class="greenstar" />
+        <p>Nästa spel om: 13:34 tim</p>
+      </div>
+      <Keyboard :letters="letters" :finished="finished" :class="finishedClass" @submit="submit" @undo="undo" @key-click="keyClick" />
+      <div class="flex flex-col w-screen max-w-3xl px-4 py-11 mx-auto md:py-12 min-[1600px]:py-16">
+        <NavBarBottom />
+      </div>
     </div>
-    <Keyboard :letters="letters" :finished="finished" :class="finishedClass" @submit="submit" @undo="undo" @key-click="keyClick" />
-    <div class="flex flex-col w-screen max-w-3xl px-4 py-11 mx-auto md:py-12 min-[1600px]:py-16">
-      <NavBarBottom />
-    </div>
+    <transition name="popup">
+      <Popup v-if="popup" @close="close" />
+    </transition>
   </div>
 </template>

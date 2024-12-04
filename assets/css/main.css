@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.popup-enter-active,
+.popup-leave-active {
+  transition: height 0.1s ease;
+  height: 90%;
+}
+
+.popup-enter-from,
+.popup-leave-to {
+  height: 0;
+}
+
 @layer components {
     .key{
         @apply border-knowit-black border-opacity-20 dark:border-knowit-white dark:border-opacity-20;
