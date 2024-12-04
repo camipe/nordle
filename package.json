@@ -45,6 +45,7 @@
     "autoprefixer": "^10.4.20",
     "drizzle-kit": "^0.28.1",
     "eslint": "^9.15.0",
+    "nuxt-particles": "^0.3.0",
     "postcss": "^8.4.49",
     "storybook": "8.4.4",
     "supabase": "^1.223.10",

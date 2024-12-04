@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
-  modules: ['@nuxtjs/storybook', '@nuxtjs/supabase', '@nuxt/fonts'],
+  modules: ['@nuxtjs/storybook', '@nuxtjs/supabase', '@nuxt/fonts', 'nuxt-particles'],
   runtimeConfig: {
     dbConnectionString: '',
     public: {
