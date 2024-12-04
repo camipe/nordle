@@ -30,15 +30,21 @@
         @apply border-knowit-black border-opacity-40 dark:border-knowit-white dark:border-opacity-40;
     }
     .statbox {
-        @apply bg-knowit-white dark:bg-blue-100 text-blue-80 dark:text-pink-60 rounded-3xl px-5 py-4;
+        @apply px-5 py-4 bg-knowit-white dark:bg-blue-100 text-blue-80 dark:text-pink-60 rounded-3xl;
     }
     .statbox-text{
-        @apply block text-5xl font-light;
+        @apply block text-6xl font-light;
     }
     .greenstar {
         @apply self-center mr-2 text-green;
     }
     .popuptext{
-        @apply absolute mx-auto left-0 right-0 bottom-0 w-full max-w-md;
+        @apply absolute bottom-0 left-0 right-0 w-full max-w-md mx-auto;
+    }
+    .linkli{
+        @apply py-1 border-b-[1px] border-knowit-black border-opacity-20 dark:border-knowit-white dark:!border-opacity-20;
+    }
+    .linkhover{
+        @apply opacity-60
     }
 }
