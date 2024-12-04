@@ -1,16 +1,14 @@
+<script setup>
+const router = useRouter()
+</script>
+
 <template>
-  <button @click="router.go(-1)" class="go-back-button" aria-label="Gå till föregående sida">
+  <button class="go-back-button" aria-label="Gå till föregående sida" @click="router.go(-1)">
     <span>
       <IconsBack />
     </span>
   </button>
 </template>
-
-<script setup>
-
-const router = useRouter();
-
-</script>
 
 <style scoped>
 .go-back-button {

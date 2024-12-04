@@ -1,9 +1,16 @@
 <template>
   <article class="flex flex-col h-screen px-6 pt-12">
+<<<<<<< HEAD
     <section class="max-w-[800px] mx-auto w-full">
       <header class="relative flex justify-center mb-6">
         <GoBackLink class="absolute left-0 -translate-y-1/2 top-1/2" />
         <h1 class="px-6 text-xl font-medium md:text-4xl">
+=======
+    <section class="max-w-[800px] mx-auto">
+      <header class="flex mb-6">
+        <GoBackLink />
+        <h1 class="justify-center text-xl font-medium md:text-4xl">
+>>>>>>> main
           Så spelar du Nördle
         </h1>
       </header>
@@ -16,6 +23,7 @@
         <p>
           Till din hjälp får du ledtrådar i form av färger:
         </p>
+<<<<<<< HEAD
 
         <div alt="Exempel på färger och vad de betyder" class="bg-[#F3EFD5] dark:bg-knowit-white dark:bg-opacity-[0.08] rounded-2xl flex flex-col p-4 md:pt-6 min-[1600px]:pt-12 grow max-w-[366px]">
           <div class="grid grid-cols-5 gap-2 grow content-stretch">
@@ -37,6 +45,13 @@
               <span class="block">på <span class="underline">rätt</span> plats</span>
             </p>
           </div>
+=======
+        <div>
+          <img class="hidden dark:block" src="/assets/images/Instruktion-Dark.png" alt="Exempel på färger och vad de betyder">
+        </div>
+        <div>
+          <img class="block dark:hidden" src="/assets/images/Instruktion-Light.png" alt="Exempel på färger och vad de betyder">
+>>>>>>> main
         </div>
 
         <p>

@@ -11,6 +11,15 @@ export default {
 
   theme: {
     extend: {
+      fontFamily: {
+        bagoss: ['Bagoss'],
+      },
+      fontWeight: {
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+      },
       colors: {
         green: '#55D440',
         gray: '#404050',
