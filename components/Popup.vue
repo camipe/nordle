@@ -135,7 +135,7 @@ function onLoad(container: Container) {
       @load="onLoad"
     />
 
-    <button class="float-right mt-8 mr-3.5" aria-label="Stäng popupfönster" @click="$emit('close')">
+    <button class="float-right mt-8 mr-3.5 relative z-10" aria-label="Stäng popupfönster" @click="$emit('close')">
       <IconsStar class="w-10 h-10 text-4xl text-green" aria-hidden="true" />
     </button>
 

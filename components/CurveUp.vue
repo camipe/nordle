@@ -1,6 +1,6 @@
 <template>
   <div>
-    <svg viewBox="0 0 650 400" preserveAspectRatio="xMidYMid meet" class="mx-auto rotate-[-15deg] mt-[14vh] mb-12 text-[4rem] md:h-1/3 min-[1400px]:w-[45%] min-[1600px]:w-auto">
+    <svg viewBox="0 0 650 400" preserveAspectRatio="xMidYMid meet" class="mx-auto rotate-[-15deg] mt-[12vh] mb-12 text-[4rem] md:h-1/3 min-[1400px]:w-[45%] min-[1600px]:w-auto">
       You're a tech mastermind!
       <path id="curve" fill="transparent" d="M 50 350 C 50 150 250 50 400 50 C 550 50 750 150 750 350 L 750 350" />
       <text width="600" fill="currentColor">
@@ -20,7 +20,7 @@
         <div class="statbox">
           <p class="inline">
             Antal vinster
-            <span class="statbox-text">100%</span>
+            <span class="statbox-text">100<span class="text-3xl">%</span></span>
           </p>
         </div>
         <div class="statbox">
