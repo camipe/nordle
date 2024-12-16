@@ -8,7 +8,6 @@ export default {
     './app.vue',
     './error.vue',
   ],
-
   theme: {
     extend: {
       fontFamily: {
@@ -23,6 +22,7 @@ export default {
       colors: {
         green: '#55D440',
         gray: '#404050',
+        mediumgray: '#939292',
         red: '#E31F04',
         knowit: {
           white: '#FEFBE6',
