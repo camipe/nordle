@@ -11,9 +11,12 @@
       <ul class="text-base mt-9">
         <li class="linkli">
           <button class="flex w-full py-2 hover:linkhover">
-            <IconsSun class="text-blue-80 dark:text-purple-100" />
-            <span class="text-left grow ps-3">Ljust läge</span>
-            <IconsCaretRight class="mr-1" />
+            <label class="inline-flex items-center justify-between w-full cursor-pointer">
+              <IconsSun class="text-blue-80 dark:text-purple-100" />
+              <span class="text-left grow ps-3">Ljust läge</span>
+              <input type="checkbox" value="" class="sr-only peer">
+              <div class="relative w-11 h-6 bg-mediumgray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-knowit-white dark:peer-focus:ring-knowit-black rounded-full peer dark:bg-mediumgray peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-knowit-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-knowit-white after:border-mediumgray after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-mediumgray peer-checked:bg-blue-80 dark:peer-checked:bg-purple-100" />
+            </label>
           </button>
         </li>
         <li class="linkli">
